@@ -154,7 +154,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               links: {
                 color: "#f5d393",
-                distance: 50,
+                distance: 20,
                 enable: true,
                 opacity: 0.5,
                 width: 1,
