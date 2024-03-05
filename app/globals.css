@@ -23,3 +23,37 @@
     rgba(53, 30, 33, 0.5)
   );
 }
+
+.mask {
+  mask-image: url("/mask.svg");
+}
+
+.text span {
+  position: absolute;
+  left: 50%;
+  font-size: 1.2em;
+  transform-origin: 0 100px;
+  font-family: monospace;
+}
+.text {
+  animation: spin 10s infinite linear;
+  transition: 300ms;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+::selection {
+  background-color: rgba(1, 101, 110, 1);
+  color: whitesmoke;
+}
+
+.dashed_border {
+  border-spacing: 10;
+}
