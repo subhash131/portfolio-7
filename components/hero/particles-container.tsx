@@ -17,6 +17,7 @@ type ParticlesProps = {
   speed?: number;
   particleColor?: string;
   particleDensity?: number;
+  linkDistance?: number;
 };
 export const SparklesCore = (props: ParticlesProps) => {
   const {
@@ -28,6 +29,7 @@ export const SparklesCore = (props: ParticlesProps) => {
     speed,
     particleColor,
     particleDensity,
+    linkDistance,
   } = props;
   const [init, setInit] = useState(false);
   useEffect(() => {
@@ -113,7 +115,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                   },
                 },
                 enable: true,
-                maxSpeed: 10,
+                maxSpeed: 1,
                 mode: "bounce",
                 overlap: {
                   enable: true,
@@ -154,7 +156,7 @@ export const SparklesCore = (props: ParticlesProps) => {
               },
               links: {
                 color: "#f5d393",
-                distance: 20,
+                distance: linkDistance || 20,
                 enable: true,
                 opacity: 0.5,
                 width: 1,
@@ -191,7 +193,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 drift: 0,
                 enable: true,
                 gravity: {
-                  acceleration: 1,
+                  acceleration: 0.1,
                   enable: false,
                   inverse: true,
                   maxSpeed: 50,
@@ -211,7 +213,7 @@ export const SparklesCore = (props: ParticlesProps) => {
                 size: false,
                 speed: {
                   min: 0.1,
-                  max: 10,
+                  max: 5,
                 },
                 spin: {
                   acceleration: 0,
