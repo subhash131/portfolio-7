@@ -33,8 +33,8 @@ const SmoothScroll: React.FC<{ children: React.ReactNode }> = ({
     restDelta: 0.001,
   });
 
-  const y = useTransform(smoothProgress, (value) => {
-    return value * -(contentHeight - windowHeight);
+  const y = useTransform(smoothProgress, (latest) => {
+    return latest * -(contentHeight - windowHeight);
   });
 
   return (
