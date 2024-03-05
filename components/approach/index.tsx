@@ -32,8 +32,9 @@ const data = [
 const Approach = () => {
   return (
     <div
-      className={`w-screen h-screen ${antonio.className} p-20 flex flex-col`}
+      className={`w-screen h-screen ${antonio.className} p-20 flex flex-col relative`}
     >
+      <div className="absolute w-96 h-96 sky_gradient_background z-1 rounded-full blur-3xl" />
       <div className="">
         <div className="w-full h-fit flex items-center justify-start">
           <p className="text-7xl opacity-90">
@@ -53,13 +54,15 @@ const Approach = () => {
           })}
         </div>
       </div>
-      <div className="w-[90%]  mb-20 m-auto mt-1 flex justify-between relative items-center">
-        <div className="w-5 h-5 rounded-full bg-white"></div>
-        <div className="w-5 h-5 rounded-full bg-white"></div>
-        <div className="w-5 h-5 rounded-full bg-white"></div>
-        <div className="w-5 h-5 rounded-full bg-white"></div>
-        <div className="w-5 h-5 rounded-full bg-white"></div>
-        <div className="absolute w-full border-b-2 border-dashed border-spacing-12  border-white" />
+      <div className="w-[90%] m-auto mt-4 flex justify-between relative items-center">
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div className="w-5 h-5 rounded-full bg-white" />
+        <div
+          className={`absolute w-full border-b-2 dashed_border border-white`}
+        />
       </div>
     </div>
   );
