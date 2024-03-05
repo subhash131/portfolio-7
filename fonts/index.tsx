@@ -1,4 +1,4 @@
-import { Antonio, Poppins, Inter } from "next/font/google";
+import { Antonio, Poppins, Inter, Manrope } from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -10,5 +10,9 @@ export const poppins = Poppins({
 export const antonio = Antonio({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  
+});
+
+export const manrope = Manrope({
+  weight: ["200", "300", "400", "500", "600", "700"],
+  subsets: ["latin"],
 });
