@@ -18,7 +18,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-black overflow-y-scroll overflow-x-hidden min-h-[200vh] relative text-white`}
       >
-        <SparklesCore className="w-full h-full absolute" particleDensity={5} />
+        <SparklesCore
+          className="w-full h-full absolute"
+          particleDensity={5}
+          linkDistance={150}
+        />
         {children}
       </body>
     </html>
