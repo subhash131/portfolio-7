@@ -1,4 +1,5 @@
-import { antonio, poppins } from "@/fonts";
+import { poppins } from "@/fonts";
+import Link from "next/link";
 import React from "react";
 
 const data = [
@@ -31,16 +32,19 @@ const data = [
 
 const Approach = () => {
   return (
-    <div
-      className={`w-screen h-screen ${antonio.className} p-20 flex flex-col relative`}
-    >
+    <div className={`w-screen h-screen $} p-20 flex flex-col relative`}>
       <div className="absolute w-96 h-96 sky_gradient_background z-1 rounded-full blur-3xl" />
       <div className="">
-        <div className="w-full h-fit flex items-center justify-start">
-          <p className="text-7xl opacity-90">
-            My Approach to solve
-            <br /> the problem
-          </p>
+        <div className="w-full h-20 flex items-center justify-between">
+          <p className="text-7xl opacity-90">My Approach</p>
+          <Link
+            href="https://www.geeksforgeeks.org/software-development-life-cycle-sdlc/"
+            target="_blank"
+          >
+            <div className="px-4 py-2 border rounded-full hover:scale-90 transition-all">
+              <p>standard procedure</p>
+            </div>
+          </Link>
         </div>
         <div className="w-full h-fit pt-32 flex items-center justify-between">
           {data.map(({ description, title }, index) => {
@@ -54,7 +58,7 @@ const Approach = () => {
           })}
         </div>
       </div>
-      <div className="w-[90%] m-auto mt-4 flex justify-between relative items-center">
+      <div className="w-[90%] m-auto mt-12 flex justify-between relative items-center">
         <div className="w-5 h-5 rounded-full bg-white" />
         <div className="w-5 h-5 rounded-full bg-white" />
         <div className="w-5 h-5 rounded-full bg-white" />
@@ -79,7 +83,7 @@ const Card = ({
 }) => {
   return (
     <div className="w-52 h-full flex flex-col gap-4">
-      <h3 className="text-3xl h-20">{title}</h3>
+      <h3 className="text-2xl h-20">{title}</h3>
       <p className={`${poppins.className} text-xs h-24 text-neutral-400`}>
         {description}
       </p>
