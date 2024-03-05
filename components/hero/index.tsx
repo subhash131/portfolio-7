@@ -1,7 +1,6 @@
 "use client";
 import { poppins } from "@/fonts";
 import React from "react";
-import MeshSvg from "../svg/mesh-svg";
 import Image from "next/image";
 import Navbar from "./navbar";
 
