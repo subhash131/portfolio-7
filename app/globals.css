@@ -53,7 +53,12 @@
   background-color: rgba(1, 101, 110, 1);
   color: whitesmoke;
 }
+html {
+  overflow: scroll;
+}
 
-.dashed_border {
-  border-spacing: 10;
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
 }
