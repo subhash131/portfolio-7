@@ -38,8 +38,8 @@ const Approach = () => {
     >
       <div className="absolute w-96 h-96 sky_gradient_background z-1 rounded-full blur-3xl" />
       <div>
-        <div className="w-full h-20 flex items-center justify-between max-sm:flex-col max-sm:h-fit">
-          <Reveal>
+        <div className="w-full h-fit flex items-center justify-between max-sm:flex-col max-sm:h-fit">
+          <Reveal className="h-fit overflow-visible">
             <p className="text-7xl opacity-90 max-lg:text-4xl max-sm:text-2xl">
               My Approach
             </p>

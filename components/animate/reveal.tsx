@@ -20,7 +20,7 @@ const Reveal = ({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isInView]);
   return (
-    <div className={`relative overflow-hidden ${className}`} ref={ref}>
+    <div className={`relative overflow-hidden ${className} `} ref={ref}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
