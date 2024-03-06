@@ -5,7 +5,7 @@ import Reveal from "../animate/reveal";
 
 const Footer = () => {
   return (
-    <div className="w-screen h-screen px-20 py-10 grid grid-cols-12 grid-rows-12 overflow-hidden bg-red-20 ">
+    <div className="w-screen h-screen px-20 py-10 grid grid-cols-12 grid-rows-12 overflow-hidden bg-red-20 max-sm:flex max-sm:flex-col max-sm:gap-6 max-sm:h-fit">
       <div className="row-start-1 row-end-11 col-start-1 col-end-6 flex justify-center items-center flex-col gap-4">
         <a
           href="mailto:subhashnayak131@gmail.com"

@@ -32,10 +32,10 @@ const CreativeFrontendDeveloper = () => {
   }, [inView]);
 
   return (
-    <div className="w-screen h-[70vh] py-10" ref={containerRef}>
+    <div className="w-screen h-[70vh] py-10 max-sm:h-fit" ref={containerRef}>
       <div className="h-28 px-20 ">
-        <Reveal className="w-fit">
-          <p className="w-72 text-xs text-neutral-400">
+        <Reveal className="w-fit max-sm:hidden max-lg:hidden">
+          <p className="w-72 text-xs text-neutral-400 ">
             I&apos;ve worked with the Fortune 500 brands, specializing in
             implementing the solutions for large-scale applications. This
             experience has provided me with a deep understanding of design and
@@ -44,7 +44,7 @@ const CreativeFrontendDeveloper = () => {
         </Reveal>
       </div>
       <div
-        className={`h-72 w-full ${manrope.className} text-8xl relative flex flex-col items-center  `}
+        className={`h-72 w-full ${manrope.className} text-8xl relative flex flex-col items-center max-sm:text-4xl max-sm:h-fit max-lg:text-7xl `}
       >
         <motion.div
           variants={leftVariants}

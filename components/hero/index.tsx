@@ -24,9 +24,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-20 items-center justify-center h-[60%] z-10">
+      <div className="flex flex-col gap-20 items-center justify-center h-[60%] z-10 ">
         <Reveal className="w-full flex justify-center text-center items-center">
-          <h1 className="text-8xl w-[80%] font-semibold leading-[8rem] space-x-3 tracking-normal ">
+          <h1 className="text-7xl w-[80%] font-semibold leading-[8rem] space-x-3 tracking-normal max-xl:text-6xl max-xl:leading-[8rem] max-lg:text-4xl max-lg:leading-[5rem] max-sm:text-2xl max-sm:leading-[3rem]">
             I&apos;m Subhash, Creative Frontend
             <span className="bg-white text-black rounded-b-3xl px-4 rounded-tl-3xl ">
               Developer.
@@ -37,7 +37,7 @@ const Hero = () => {
           className="w-full text-center flex items-center justify-center mb-0"
           delay={0.5}
         >
-          <p className="text-lg w-[50%] ">
+          <p className="text-lg w-[50%] max-lg:text-sm max-sm:text-xs max-sm:w-[60%]">
             I develop accessible, responsive, interactive, and animated websites
             with a strong focus on performance.
           </p>

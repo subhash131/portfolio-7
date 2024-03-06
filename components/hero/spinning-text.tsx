@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const SpinningText = () => {
+const SpinningText = ({ className }: { className?: string }) => {
   const [text] = useState("-  Subhash Nayak  -  Frontend  -  Developer");
   const textRef = useRef<HTMLParagraphElement>(null);
   useEffect(() => {
@@ -15,7 +15,9 @@ const SpinningText = () => {
         .join("");
   });
   return (
-    <div className="circle relative w-52 h-52 rounded-full flex justify-center items-center scale-50 transition-all hover:scale-100">
+    <div
+      className={`circle relative w-52 h-52 rounded-full flex justify-center items-center scale-50 transition-all hover:scale-100 ${className}`}
+    >
       <div className="text w-full h-full absolute rounded-full flex text-xl">
         <p ref={textRef}></p>
       </div>
