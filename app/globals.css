@@ -39,7 +39,10 @@
   animation: spin 10s infinite linear;
   transition: 300ms;
 }
-
+.logo:hover {
+  animation: spin 10s infinite linear;
+  transition: 300ms;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
