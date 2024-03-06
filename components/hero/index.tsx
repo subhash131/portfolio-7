@@ -33,7 +33,10 @@ const Hero = () => {
             </span>
           </h1>
         </Reveal>
-        <Reveal className="w-full text-center flex items-center justify-center mb-0">
+        <Reveal
+          className="w-full text-center flex items-center justify-center mb-0"
+          delay={0.5}
+        >
           <p className="text-lg w-[50%] ">
             I develop accessible, responsive, interactive, and animated websites
             with a strong focus on performance.
