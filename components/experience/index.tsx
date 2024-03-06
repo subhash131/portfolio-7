@@ -4,7 +4,7 @@ import React from "react";
 const workHistory = [
   {
     title: "Senior Frontend Engineer (Freelance)",
-    company: "Sponsor Sphere",
+    company: "Sponsor Sphere (early startup)",
     location: "Remote",
     duration: "Jan 2024 - Present",
     link: "https://sponsor-shpere.vercel.app/",
