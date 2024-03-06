@@ -28,9 +28,9 @@ const workHistory = [
 
 const Experience = () => {
   return (
-    <div className="w-screen h-screen px-20 relative overflow-hidden">
+    <div className="w-screen h-screen px-20 relative overflow-hidden mt-10">
       <div className="absolute w-96 h-96 pink_gradient_background pointer-events-none rounded-full blur-3xl -left-32 top-12" />
-      <Reveal className="w-fit h-32">
+      <Reveal className="w-fit h-32 flex items-center ">
         <p className="text-4xl">Work History</p>
       </Reveal>
       <div className="w-full h-full">
