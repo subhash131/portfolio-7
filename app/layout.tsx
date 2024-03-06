@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { SparklesCore } from "@/components/hero/particles-container";
 import { inter } from "@/fonts";
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-black overflow-y-scroll overflow-x-hidden min-h-[200vh] relative text-white`}
       >
+        <Analytics />
         <SparklesCore
           className="w-full h-full absolute"
           particleDensity={5}
