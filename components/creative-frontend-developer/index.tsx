@@ -6,7 +6,7 @@ import Reveal from "../animate/reveal";
 
 const CreativeFrontendDeveloper = () => {
   const containerRef = useRef(null);
-  const inView = useInView(containerRef, { once: true });
+  const inView = useInView(containerRef, { once: false });
   const mainControls = useAnimation();
 
   const leftVariants = {
@@ -27,6 +27,7 @@ const CreativeFrontendDeveloper = () => {
   };
   useEffect(() => {
     if (inView) mainControls.start("final");
+    else mainControls.start("initial");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
@@ -60,7 +61,7 @@ const CreativeFrontendDeveloper = () => {
           variants={rightVariants}
           animate={mainControls}
           initial="initial"
-          transition={{ delay: 0.8, duration: 0.5 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
         >
           <p className="italic">Developer</p>
         </motion.div>
