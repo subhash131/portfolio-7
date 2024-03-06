@@ -5,22 +5,7 @@ import React, { useRef } from "react";
 
 const CreativeFrontendDeveloper = () => {
   const containerRef = useRef(null);
-  const leftVariants = {
-    initial: {
-      marginLeft: 0,
-    },
-    final: {
-      marginLeft: 100,
-    },
-  };
-  const rightVariants = {
-    initial: {
-      marginLeft: 0,
-    },
-    final: {
-      marginLeft: 100,
-    },
-  };
+
   return (
     <div className="w-screen h-[70vh] py-10" ref={containerRef}>
       <div className="h-28 px-20 ">
@@ -38,7 +23,6 @@ const CreativeFrontendDeveloper = () => {
           className="w-fit ml-0 "
           style={{ x: "-150%" }}
           whileInView={{ x: "-50%" }}
-          //   variants={leftVariants}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <p className="italic">Creative</p>
@@ -47,7 +31,6 @@ const CreativeFrontendDeveloper = () => {
           <p className="italic text-neutral-300">Frontend</p>
         </div>
         <motion.div
-          variants={rightVariants}
           className="mr-0 w-fit"
           style={{ x: "120%" }}
           whileInView={{ x: "50%" }}
