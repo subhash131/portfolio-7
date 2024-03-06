@@ -3,6 +3,7 @@ import { poppins } from "@/fonts";
 import React from "react";
 import Image from "next/image";
 import Navbar from "./navbar";
+import Reveal from "../animate/reveal";
 
 const Hero = () => {
   return (
@@ -24,20 +25,20 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col gap-20 items-center justify-center h-[60%] z-10">
-        <div className="w-full flex justify-center text-center ">
+        <Reveal className="w-full flex justify-center text-center items-center">
           <h1 className="text-8xl w-[80%] font-semibold leading-[8rem] space-x-3 tracking-normal ">
             I&apos;m Subhash, Creative Frontend
             <span className="bg-white text-black rounded-b-3xl px-4 rounded-tl-3xl ">
               Developer.
             </span>
           </h1>
-        </div>
-        <div className="w-full text-center flex items-center justify-center mb-0">
+        </Reveal>
+        <Reveal className="w-full text-center flex items-center justify-center mb-0">
           <p className="text-lg w-[50%] ">
             I develop accessible, responsive, interactive, and animated websites
             with a strong focus on performance.
           </p>
-        </div>
+        </Reveal>
       </div>
     </main>
   );
