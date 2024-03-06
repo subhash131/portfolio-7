@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Reveal from "../animate/reveal";
 
 const workHistory = [
   {
@@ -29,9 +30,9 @@ const Experience = () => {
   return (
     <div className="w-screen h-screen px-20 relative overflow-hidden">
       <div className="absolute w-96 h-96 pink_gradient_background pointer-events-none rounded-full blur-3xl -left-32 top-12" />
-      <div className="h-32 flex items-center">
+      <Reveal className="w-fit h-32">
         <p className="text-4xl">Work History</p>
-      </div>
+      </Reveal>
       <div className="w-full h-full">
         {workHistory.map(
           ({ company, location, title, duration, link }, index) => {
@@ -70,7 +71,9 @@ const Card = ({
   return (
     <div className="border-b-thin flex justify-between items-center border-b-cus-light">
       <div className="py-10 flex flex-col gap-4">
-        <p className="text-3xl">{title}</p>
+        <Reveal>
+          <p className="text-3xl">{title}</p>
+        </Reveal>
         <Link href={link} target="_blank" className="text-sm cursor-pointer">
           {company}
         </Link>
