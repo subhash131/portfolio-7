@@ -5,9 +5,11 @@ import { motion, useInView, useAnimation } from "framer-motion";
 const Reveal = ({
   children,
   className,
+  delay,
 }: {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
@@ -26,7 +28,7 @@ const Reveal = ({
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25 }}
+        transition={{ duration: 0.5, delay: delay ?? 0.25 }}
         className="w-full flex items-center justify-center"
       >
         {children}
