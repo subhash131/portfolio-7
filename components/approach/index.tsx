@@ -56,6 +56,7 @@ const Approach = () => {
                 description={description}
                 title={title}
                 key={`approach-${index}`}
+                index={index}
               />
             );
           })}
@@ -80,12 +81,14 @@ export default Approach;
 const Card = ({
   title,
   description,
+  index,
 }: {
   title: string;
   description: string;
+  index: number;
 }) => {
   return (
-    <Reveal>
+    <Reveal delay={index === 0 ? 0.05 : index / 3}>
       <div className="w-52 h-full flex flex-col gap-4">
         <h3 className="text-2xl h-20 ">{title}</h3>
         <p className={`${poppins.className} text-xs h-24 text-neutral-400`}>
