@@ -7,11 +7,11 @@ const Navbar = () => {
       <SpinningText className="max-sm:absolute max-sm:top-10" />
       <a href="mailto:subhashnayak131@gmail.com">
         <div className="border p-4 rounded-full flex w-fit items-center justify-center gap-2  mr-20 scale-90 hover:scale-100 transition-all cursor-pointer max-sm:w-full">
-          <div className="p-1 rounded-full bg-[#2AED5D] h-5 w-5  grid place-content-center">
+          <div className="p-1 rounded-full bg-[#F80802] h-5 w-5  grid place-content-center">
             <div className="h-2 w-2 rounded-full bg-black" />
           </div>
           <p className="text-sm text-white max-sm:text-xs">
-            Available for new projects.
+            Not available for new projects.
           </p>
           <div className="bg-white text-black p-1 px-4 rounded-full text-xs">
             <p>contact</p>
