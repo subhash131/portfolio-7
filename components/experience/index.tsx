@@ -3,13 +3,13 @@ import React from "react";
 import Reveal from "../animate/reveal";
 
 const workHistory = [
-  {
-    title: "Senior Frontend Engineer (Freelance)",
-    company: "Sponsor Sphere (early startup)",
-    location: "Remote",
-    duration: "Jan 2024 - Present",
-    link: "https://sponsor-shpere.vercel.app/",
-  },
+  // {
+  //   title: "Senior Frontend Engineer (Freelance)",
+  //   company: "Sponsor Sphere (early startup)",
+  //   location: "Remote",
+  //   duration: "Jan 2024 - Present",
+  //   link: "https://sponsor-shpere.vercel.app/",
+  // },
   {
     title: "Software Engineer - II",
     company: "PwC (US)",
