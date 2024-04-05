@@ -4,7 +4,7 @@ import Reveal from "../animate/reveal";
 
 const workHistory = [
   {
-    title: "Founder",
+    title: "Founder and CEO",
     company: "Ad Tub",
     location: "India",
     duration: "Feb 2024 - Present",
